@@ -4,22 +4,22 @@ import font2 from '../assets/fonts/RozhaOne-Regular.ttf';
 
 const Typography = createGlobalStyle`
     @font-face {
-        font-family: 'Reem Kufi' format('ttf');
+        font-family: 'Reem Kufi';
         src: url(${font1});
         font-style: normal;
         font-weight: 400;        
     }
     @font-face {
-        font-family: 'Rozha One' format('ttf');
+        font-family: 'Rozha One';
         src: url(${font2});
         font-style: normal;
         font-weight: 400; 
     }
     html {
-        font-family: 'Reem Kufi', sans-serif;
+        font-family: var(--font-family-body);
     }
     h1,h2,h3 {
-        font-family: 'Rozha One', serif;
+        font-family: var(--font-family-head);
     }
     // Css reset
     /* http://meyerweb.com/eric/tools/css/reset/ 
