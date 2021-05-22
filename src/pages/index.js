@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header/Header';
 
 const index = () => {
   return (
     <div>
-      <h1>hello</h1>
-      <p>world</p>
+      <Header />
     </div>
   )
 }
