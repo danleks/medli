@@ -27,12 +27,12 @@ module.exports = {
     //     display: 'swap'
     //   }
     // },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/assets/images/icon.png",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     icon: "src/assets/images/ellipse.svg",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
