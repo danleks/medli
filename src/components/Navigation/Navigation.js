@@ -12,7 +12,7 @@ const Navigation = () => {
                 {MENU_LINKS.map((link, i) => <NavigationLinkStyles key={i} to={link.to}>{link.title}</NavigationLinkStyles>)}
             </NavigationWrapperStyles>
             <NavigationWrapperStyles type='button'>
-                <Button>Log in</Button>
+                <Button style='login' type='link'>Log in</Button>
             </NavigationWrapperStyles>
         </NavigationStyles>
     )
