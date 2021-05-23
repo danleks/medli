@@ -18,8 +18,12 @@ const Typography = createGlobalStyle`
     html {
         font-family: var(--font-family-body);
     }
-    h1,h2,h3 {
-        font-family: var(--font-family-head);
+    h1,h2 {
+        font-family: var(--font-family-heading);
+        font-weight: var(--font-weight-400);
+    }
+    h3 {
+        font-weight: var(--font-weight-400);
     }
     // Css reset
     /* http://meyerweb.com/eric/tools/css/reset/ 
