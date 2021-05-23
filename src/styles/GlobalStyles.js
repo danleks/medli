@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
     :root {
         --primary-background-color: hsla(35, 92%, 95%, 1);
         --color-black: hsla(89, 62%, 7%, 1);
+        --color-black-light: hsla(76, 20%, 23%, 1);
         --color-white: hsla(0, 0%, 100%, 1);
         --color-white-transparent: hsla(0, 0%, 100%, .2);
         --color-grey: hsla(87, 4%, 48%, 1);
