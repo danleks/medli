@@ -7,20 +7,33 @@ export const HeroSectionStyles = styled.section`
     align-items: center;
     gap: 4.2rem;
     padding: 4.8rem 2.4rem 0;
-    margin: 0 auto;
+    @media(min-width: 1109px) {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 1.8rem;
+        padding: 0;
+        padding-top: 14.8rem;
+    }
 `;
 export const HeroWrapperStyles = styled.div`
     &:nth-child(1) {
         max-width: 67.7rem;
+        @media(min-width: 1109px) {
+            max-width: 100%;
+            flex: 1 67.7rem;
+        }
     }
     &:nth-child(2) {
-        max-width: 44.3rem;
+        max-width: 43rem;
+        @media(min-width: 1109px) {
+            max-width: 100%;
+            flex: 1 44.3rem;
+        }
     }
     @media(min-width: 768px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
     }
 `; 
 export const HeroImgStyles = styled(HeroImg)`
@@ -34,6 +47,9 @@ export const HeroTitleStyles = styled.h1`
     & > span {
         display: inline-block;
         width: 2.7rem;
+        @media(min-width: 768px) {
+            width: 4.3rem;
+        }
     }
     @media(min-width: 768px) {
         font-size: var(--font-size-xxxl);
@@ -42,7 +58,7 @@ export const HeroTitleStyles = styled.h1`
 `;
 export const HeroSubtitleStyles = styled.h3`
     font-size: var(--font-size-m);
-    line-height: var(--line-heght-m);
+    line-height: var(--line-height-m);
     color: var(--color-black-light);
     padding-bottom: 3rem;
     @media(min-width: 768px) {
