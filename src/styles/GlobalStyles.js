@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     :root {
         --primary-background-color: hsla(35, 92%, 95%, 1);
+        --primary-background-color-transparent: hsla(35, 92%, 95%, .8);
         --color-black: hsla(89, 62%, 7%, 1);
         --color-black-light: hsla(76, 20%, 23%, 1);
         --color-white: hsla(0, 0%, 100%, 1);
@@ -12,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         --color-grey-light-transparent: hsla(0, 0%, 90%, .5);
         --color-orange: hsla(43, 96%, 55%, 1);
         --font-size-xxxl: 80px;
+        --font-size-xxxl-secondary: 70px;
         --font-size-xxl: 50px;
         --font-size-xl: 25px;
         --font-size-l: 24px;
@@ -24,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
         --line-height-xxl: 58.5px;
         --line-height-xl: 37.5px;
         --line-height-l: 36px;
-        --line-heght-m: 30px;
+        --line-height-m: 30px;
         --line-height-s: 28.08px;
         --line-height-xs: 27px;
         --layout-max-width: 1109px;
@@ -40,7 +42,11 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         font-size: 1.6rem;
+        color: var(--color-black);
         background-color: var(--primary-background-color);
+    }
+    .break {
+        display: block;
     }
 `;
 
