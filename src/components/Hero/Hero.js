@@ -12,7 +12,7 @@ const Hero = () => {
             <HeroWrapperStyles>
                 <HeroTitleStyles>Check y<span><Ellipse /></span>ur well-being</HeroTitleStyles>
                 <HeroSubtitleStyles>We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way.</HeroSubtitleStyles>
-                <Button>Get started</Button>
+                <Button style='cta' type='link'>Get started</Button>
             </HeroWrapperStyles>
         </HeroSectionStyles>
     )
