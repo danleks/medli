@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { document } from 'browser-monads';
 import { MenuContext } from '../../contexts/menu-context';
 import Logo from '../Logo/Logo';
@@ -9,8 +9,9 @@ import { MobileMenuStyles, LinkStyles } from './MobileMenu.styles';
 const MobileMenu = () => {
     const [menu, setMenu] = useState(false);
     // remove scrolling when menu is open
+    
     if (typeof document !== 'undefined') {
-        menu ? document.querySelector('body').style.overflow = 'hidden' : document.querySelector('body').style.overflow = 'scroll'; 
+        useEffect(() => menu ? document.querySelector('body').style.overflow = 'hidden' : document.querySelector('body').style.overflow = 'scroll'); 
     }       
     return (
         <MenuContext.Provider value={[menu, setMenu]}>
