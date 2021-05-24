@@ -10,6 +10,7 @@ export const ButtonStyles = styled(Link)`
     font-size: var(--font-size-l);
     line-height: var(--line-height-l);
     text-decoration: none;
+    cursor: pointer;
     &,
     &:visited {
         color: var(--color-black);
@@ -26,5 +27,15 @@ export const ButtonStyles = styled(Link)`
             width: 25.5rem;
             height: 7rem;
         } 
+    `}
+    ${props => props.buttonstyle === 'submit' && css`
+        width: 100%;
+        height: 6.2rem;
+        border: none;
+        @media(min-width: 1109px) {
+            height: 100%;
+            font-size: var(--font-size-s);
+            line-height: var(--line-height-xs);
+        }
     `}
 `;
