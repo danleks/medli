@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
         --font-size-l: 24px;
         --font-size-m: 20px;
         --font-size-s: 18px;
+        --font-size-logo: 40px;
         --font-weight-400: 400;
         --font-family-body: 'Reem Kufi', sans-serif;
         --font-family-heading: 'Rozha One', serif;
@@ -29,11 +30,12 @@ const GlobalStyles = createGlobalStyle`
         --line-height-m: 30px;
         --line-height-s: 28.08px;
         --line-height-xs: 27px;
+        --line-height-logo: 46.8px;
         --layout-max-width: 1109px;
     }
     html {
         box-sizing: border-box;
-        font-size: 62.5%
+        font-size: 62.5%;
     }
     *, *:before, *:after {
         box-sizing: inherit;
