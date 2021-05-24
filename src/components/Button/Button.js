@@ -6,7 +6,7 @@ import { ButtonStyles } from './Button.styles';
 const Button = ({style, type, children }) => {
     const CustomTag = type === 'link' ? Link : 'button';
     return (
-        <ButtonStyles as={CustomTag} buttonstyle={style} to="#">{ children }</ButtonStyles>
+        <ButtonStyles as={CustomTag} type={style === 'submit' && style} buttonstyle={style} to="#">{ children }</ButtonStyles>
     )
 };
 
