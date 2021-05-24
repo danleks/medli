@@ -10,29 +10,13 @@ module.exports = {
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: process.env.DATO_TOKEN,
+        apiToken: process.env.GATSBY_DATO_API_TOKEN,
       },
     },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       `rozha one\:400`,
-    //       `reem kufi\:400`,
-    //     ],
-    //     display: 'swap'
-    //   }
-    // },
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     icon: "src/assets/images/ellipse.svg",
-    //   },
-    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
