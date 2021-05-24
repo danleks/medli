@@ -9,7 +9,7 @@ import { MobileMenuStyles, LinkStyles } from './MobileMenu.styles';
 const MobileMenu = () => {
     const [menu, setMenu] = useState(false);
     // remove scrolling when menu is open
-    if (document !== undefined) {
+    if (typeof document !== 'undefined') {
         const body = document.querySelector('body');
         menu ? body.style.overflow = 'hidden' : body.style.overflow = 'scroll'; 
     }       
