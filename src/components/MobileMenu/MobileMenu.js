@@ -1,17 +1,21 @@
 import React, { useState, useContext }  from 'react';
 import { MenuContext } from '../../contexts/menu-context';
-import Logo from '../../assets/images/logo.inline.svg';
+import Logo from '../Logo/Logo';
 import Hamburger from '../Hamburger/Hamburger';
 import Navigation from '../Navigation/Navigation';
-import { MobileMenuStyles } from './MobileMenu.styles';
-import { MENU_LINKS } from '../../utils/MenuLinks';
+import { MobileMenuStyles, LinkStyles } from './MobileMenu.styles';
 
 const MobileMenu = () => {
     const [menu, setMenu] = useState(false);
+    // remove scrolling when menu is open
+    const body = document.querySelector('body');
+    menu ? body.style.overflow = 'hidden' : body.style.overflow = 'scroll';    
     return (
         <MenuContext.Provider value={[menu, setMenu]}>
             <MobileMenuStyles>
-                <Logo />
+                <LinkStyles to='/'>
+                    <Logo color='black' />
+                </LinkStyles>
                 <Hamburger />
                 <Navigation open={menu} />
             </MobileMenuStyles>
