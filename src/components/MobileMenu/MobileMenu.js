@@ -9,8 +9,10 @@ import { MobileMenuStyles, LinkStyles } from './MobileMenu.styles';
 const MobileMenu = () => {
     const [menu, setMenu] = useState(false);
     // remove scrolling when menu is open
-    const body = document.querySelector('body');
-    menu ? body.style.overflow = 'hidden' : body.style.overflow = 'scroll';    
+    if (window !== undefined) {
+        const body = document.querySelector('body');
+        menu ? body.style.overflow = 'hidden' : body.style.overflow = 'scroll'; 
+    }       
     return (
         <MenuContext.Provider value={[menu, setMenu]}>
             <MobileMenuStyles>
