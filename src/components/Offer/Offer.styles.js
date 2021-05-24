@@ -10,6 +10,9 @@ export const OfferSectionStyles = styled.section`
 export const OfferWrapperStyles = styled.div`
     width: 32.7rem;
     margin: auto;
+    @media(max-width: 370px) {
+        width: 100%;
+    }
     @media(min-width: 768px) {
         width: 50rem;
     }
