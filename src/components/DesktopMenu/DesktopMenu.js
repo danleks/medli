@@ -1,13 +1,14 @@
 import React from 'react';
-import Logo from '../../assets/images/logo.inline.svg';
-import Button from '../Button/Button';
+import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
-import { DesktopMenuStyles } from './DesktopMenu.styles';
+import { DesktopMenuStyles, LinkStyles } from './DesktopMenu.styles';
 
 const DesktopMenu = () => {
     return (
         <DesktopMenuStyles>
-            <Logo />
+            <LinkStyles to='/'>
+                <Logo color='black' />
+            </LinkStyles>
             <Navigation />
         </DesktopMenuStyles>
     )
