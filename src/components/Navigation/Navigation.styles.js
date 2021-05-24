@@ -7,6 +7,7 @@ export const NavigationStyles = styled.nav`
     right: 0;
     height: 100%;
     width: 90%;
+    z-index: 1;
     background-color: var(--color-white);
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     transition: .4s transform ease;
