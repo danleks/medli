@@ -9,3 +9,10 @@ export const DesktopMenuStyles = styled.div`
         justify-content: space-between;
     }
 `;
+export const LinkStyles = styled(Link)`
+    &,
+    &:visited {
+        text-decoration: none;
+        cursor: pointer;
+    }
+`;
