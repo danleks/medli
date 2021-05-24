@@ -7,7 +7,7 @@ export const HamburgerStyles = styled.button`
     width: 4rem;
     height: 4rem;
     border: none;
-    z-index: ${({ open }) => open ? '1' : '0'};
+    z-index: ${({ open }) => open ? '2' : '0'};
     background-color: transparent;
     cursor: pointer;
 `;
