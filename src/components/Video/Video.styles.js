@@ -12,9 +12,14 @@ export const VideoSectionStyles = styled.section`
     }
 `;
 export const VideoWrapperStyles = styled.div`
+    @media(max-width: 370px) {
+        width: 100%;
+        padding-left: 1.6rem;
+    }
     position: relative;
     width: 32.7rem;
     height: 100%;
+    padding: 0;
     @media(min-width: 768px) {
         width: inherit;
     }
