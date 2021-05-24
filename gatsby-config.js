@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: process.env.GATSBY_DATO_API_TOKEN,
+        apiToken: process.env.DATO_API_TOKEN,
       },
     },
     "gatsby-plugin-styled-components",
