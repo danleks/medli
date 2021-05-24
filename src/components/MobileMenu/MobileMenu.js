@@ -10,8 +10,7 @@ const MobileMenu = () => {
     const [menu, setMenu] = useState(false);
     // remove scrolling when menu is open
     if (typeof document !== 'undefined') {
-        const body = document.querySelector('body');
-        menu ? body.style.overflow = 'hidden' : body.style.overflow = 'scroll'; 
+        menu ? document.querySelector('body').style.overflow = 'hidden' : document.querySelector('body').style.overflow = 'scroll'; 
     }       
     return (
         <MenuContext.Provider value={[menu, setMenu]}>
