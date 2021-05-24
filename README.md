@@ -1,5 +1,7 @@
 # [Medli](https://silly-shaw-75408a.netlify.app/)
 
+[https://silly-shaw-75408a.netlify.app](https://silly-shaw-75408a.netlify.app)
+
 ## Stack technologiczny:
 
 - React (Gatsby)
